@@ -45,12 +45,12 @@ export function Card(props: CardProps) {
       ))}
       <button
         className={clsx(
-          `mt-6 transition bg-gradient-to-br from-gradient-from to-gradient-to text-very-light-grayish-blue
-           rounded-md p-3 mt-6uppercase tracking-widest hover:bg-none hover:text-gradient-to border 
-           border-transparent hover:border-gradient-to uppercase`,
+          `mt-6 transition rounded-md p-3 uppercase tracking-widest  border border-transparent`,
           {
-            "bg-none bg-very-light-grayish-blue hover:bg-transparent hover:border-very-light-grayish-blue text-gradient-to hover:text-very-light-grayish-blue":
+            "bg-none bg-very-light-grayish-blue hover:border-very-light-grayish-blue text-gradient-to hover:text-very-light-grayish-blue hover:bg-transparent":
               featured,
+            "text-very-light-grayish-blue bg-gradient-to-br from-gradient-from to-gradient-to hover:bg-none hover:border-gradient-to hover:text-gradient-to":
+              !featured,
           },
         )}
       >
